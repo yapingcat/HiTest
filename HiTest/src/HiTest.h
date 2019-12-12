@@ -19,7 +19,7 @@ public:
 		class = typename std::enable_if<!std::is_member_function_pointer<F>::value>::type>
 		void registerTestCase(F && f, Arges && ...args)
 	{
-		auto it = [=]{ returr f(args...); };
+		auto it = [=]{ return f(args...); };
 		cases_.push_back(it);
 	}
 
