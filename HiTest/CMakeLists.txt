@@ -1,3 +1,3 @@
 project(Hitest)
-aux_source_directory(. Sourcefile)
-add_library(${PROJECT_NAME} STATIC ${Sourcefile})
+aux_source_directory(./src SOURCE_FILE)
+add_library(${PROJECT_NAME} STATIC ${SOURCE_FILE})
