@@ -1,2 +1,0 @@
-/usr/bin/ar qc libHitest.a  CMakeFiles/Hitest.dir/src/main.cpp.o
-/usr/bin/ranlib libHitest.a

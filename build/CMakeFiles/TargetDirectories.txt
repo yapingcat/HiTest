@@ -1,2 +1,0 @@
-/home/HiTest/build/Test/CMakeFiles/Test.dir
-/home/HiTest/build/HiTest/CMakeFiles/Hitest.dir

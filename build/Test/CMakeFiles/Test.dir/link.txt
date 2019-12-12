@@ -1,1 +1,0 @@
-/usr/local/bin/c++      CMakeFiles/Test.dir/Test.cpp.o  -o Test -rdynamic ../../Test/../build/HiTest/libHitest.a 
