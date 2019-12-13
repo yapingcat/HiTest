@@ -6,7 +6,6 @@ simple c++ Unit Test
 支持函数，成员函数，lambda表达式，仿函数(const)
 
 #include "HiTest.h"
-#include <iostream>
 
 void Test1()
 {
