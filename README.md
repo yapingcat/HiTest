@@ -20,8 +20,11 @@ int Test2(int a,int b)
 }
 
 class B
+
 {
+
 public:
+
 	void operator()() const { std::cout << "operator() " << std::endl; }
 
 	void test() { std::cout << "B:test()" << std::endl; }
@@ -31,13 +34,21 @@ public:
 
 void CaseGenerator()
 {
+
 	HITest::addTestCase([] {std::cout << "lambda" << std::endl; });
+  
 	HITest::addTestCase(Test1);
+  
 	int a = 10;
+  
 	HITest::addTestCase(Test2,a,23);
+  
 	B b;
+  
 	HITest::addTestCase(&B::test, &b);
+  
 	HITest::addTestCase(b);
+  
 }
 
 HITestMain(CaseGenerator);
