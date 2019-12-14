@@ -15,6 +15,9 @@ int Test2(int a,int b)
 class B
 {
 public:
+	void operator()(int a){ std::cout<<"operator(int a)"<< a <<std::endl;}
+	void operator()(){ std::cout<<"operator()"<<std::endl;}
+	void operator()() const { std::cout<<"const operator()"<<std::endl;}
 	void test() { std::cout << "B:test()" << std::endl; }
 };
 
@@ -26,7 +29,11 @@ void CaseGenerator()
 	int a = 10;
 	HITest::addTestCase(Test2,a,23);
 	B b;
+	const B b1;
 	HITest::addTestCase(&B::test, &b);
+	HITest::addTestCase(b);
+	HITest::addTestCase(b,1);
+	HITest::addTestCase(b1);
 }
 
 HITestMain(CaseGenerator);

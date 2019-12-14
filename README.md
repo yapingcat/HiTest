@@ -3,7 +3,7 @@ simple c++ Unit Test
 
 # usage
 
-支持函数，成员函数，lambda表达式，仿函数(const)
+支持函数，成员函数，lambda表达式，仿函数
 
 #include "HiTest.h"
 
